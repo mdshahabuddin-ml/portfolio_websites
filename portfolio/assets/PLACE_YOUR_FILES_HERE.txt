@@ -1,0 +1,8 @@
+Place your files in this folder:
+
+  avatar.jpg  ← Your profile photo (any square image works best)
+  resume.pdf  ← Your resume / CV in PDF format
+
+After adding avatar.jpg, update index.html:
+Find the .avatar-inner div and replace "MS" with:
+  <img src="assets/avatar.jpg" alt="Md Shahabuddin" />

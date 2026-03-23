@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Md Shahabuddin — AI & ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/navbar.css" />
+<link rel="stylesheet" href="css/hero.css" />
+<link rel="stylesheet" href="css/about.css" />
+<link rel="stylesheet" href="css/skills.css" />
+<link rel="stylesheet" href="css/projects.css" />
+<link rel="stylesheet" href="css/github.css" />
+<link rel="stylesheet" href="css/contact.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav id="navbar">
+  <div class="nav-logo">MS.</div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#github">github</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about"    onclick="closeMobile()">About</a>
+  <a href="#skills"   onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#github"   onclick="closeMobile()">GitHub</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="gradient-text">Md Shahabuddin</span>
+        </h1>
+        <div class="hero-role">
+          <span id="typed-text"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-tagline">
+          I build intelligent systems and websites that solve real-world problems —
+          from AI-powered tools to clean, responsive web interfaces.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="assets/resume.pdf" download class="btn btn-ghost" id="downloadResume">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">AI Domains</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring">
+            <!-- Replace with <img src="assets/avatar.jpg" alt="Md Shahabuddin" /> inside .avatar-inner -->
+            <div class="avatar-inner">MS</div>
+          </div>
+          <div class="avatar-badge">
+            <i class="fas fa-brain"></i> AI &amp; ML
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// about me</span>
+      <h2 class="section-title">Who Am <span class="gradient-text">I?</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-card">
+          <div class="about-card-header">Education</div>
+          <div class="edu-item">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-title">Bachelor of Technology (B.Tech)</div>
+              <div class="edu-sub">Computer Science &amp; Engineering — AI &amp; ML</div>
+              <div class="edu-sub">Apex University Jaipur</div>
+              <div class="edu-date">November 2023 — January 2027</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">📍</div>
+            <div>
+              <div class="edu-title">Location</div>
+              <div class="edu-sub">Katihar, Bihar, India</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">🏆</div>
+            <div>
+              <div class="edu-title">Certifications</div>
+              <div class="edu-sub">Generative AI · Introduction to AI<br>Python · Microsoft Copilot · AWS GenAI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="about-text">
+          I'm an AI &amp; ML undergraduate at Apex University Jaipur, passionate about building
+          intelligent systems that bridge the gap between research and real-world impact.
+          My work spans machine learning models, AI-powered applications, and full-stack web development.
+        </p>
+        <p class="about-text">
+          With hands-on experience in Python, Scikit-learn, PyTorch, and web technologies,
+          I've built everything from invoice processing AI to Netflix-style recommendation engines.
+          I believe the best code solves real problems elegantly.
+        </p>
+        <div class="about-goals">
+          <div class="goal-item"><div class="goal-icon">🎯</div><span>Targeting roles as an AI Engineer or ML Developer</span></div>
+          <div class="goal-item"><div class="goal-icon">🔭</div><span>Exploring deep learning, NLP &amp; generative AI systems</span></div>
+          <div class="goal-item"><div class="goal-icon">🌱</div><span>Continuously building and shipping projects to GitHub</span></div>
+          <div class="goal-item"><div class="goal-icon">🤝</div><span>Open to internships, collaborations &amp; open-source</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// what I know</span>
+      <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>💻</span> Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>🧠</span> AI / ML Libraries</div>
+        <div class="skill-tags">
+          <span class="skill-tag accent">NumPy</span>
+          <span class="skill-tag accent">Pandas</span>
+          <span class="skill-tag accent">Scikit-learn</span>
+          <span class="skill-tag accent">PyTorch</span>
+          <span class="skill-tag accent">Matplotlib</span>
+          <span class="skill-tag accent">Seaborn</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>🌐</span> Web Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag cyan">HTML / CSS</span>
+          <span class="skill-tag cyan">JavaScript ES6+</span>
+          <span class="skill-tag cyan">Responsive Design</span>
+          <span class="skill-tag cyan">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>⚙️</span> AI Domains</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">GenAI</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>🛠️</span> Tools &amp; Platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">Google Colab</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title"><span>🚀</span> Currently Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag accent">Transformers</span>
+          <span class="skill-tag accent">LangChain</span>
+          <span class="skill-tag accent">FastAPI</span>
+          <span class="skill-tag accent">Docker</span>
+          <span class="skill-tag accent">React</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// what I've built</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    </div>
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card featured reveal" data-cat="ai">
+        <div class="project-card-top">
+          <div class="project-icon">📄</div>
+          <span class="project-badge ai">AI · NLP</span>
+        </div>
+        <div class="project-title">Invoice Intelligence System</div>
+        <div class="project-desc">AI-based invoice processing system that extracts, classifies, and validates invoice data using OCR and NLP pipelines.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">NLP</span>
+          <span class="stack-tag">OCR</span><span class="stack-tag">PyTorch</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card featured reveal" data-cat="ml">
+        <div class="project-card-top">
+          <div class="project-icon">🎬</div>
+          <span class="project-badge ml">ML · RecSys</span>
+        </div>
+        <div class="project-title">Cineverse AI — Movie Recommendation</div>
+        <div class="project-desc">Netflix-style movie recommendation engine using collaborative filtering and content-based algorithms.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">Scikit-learn</span>
+          <span class="stack-tag">Pandas</span><span class="stack-tag">Matplotlib</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal" data-cat="ai">
+        <div class="project-card-top">
+          <div class="project-icon">📋</div>
+          <span class="project-badge ai">AI · HR</span>
+        </div>
+        <div class="project-title">AI Resume Screening System</div>
+        <div class="project-desc">Automated resume parser and ranker matching candidates to job descriptions using NLP classification models.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">NLP</span><span class="stack-tag">Scikit-learn</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal" data-cat="ml">
+        <div class="project-card-top">
+          <div class="project-icon">🏥</div>
+          <span class="project-badge ml">ML · Health</span>
+        </div>
+        <div class="project-title">Disease Prediction System</div>
+        <div class="project-desc">ML model predicting diseases from patient symptoms using classification algorithms with high accuracy scores.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">Scikit-learn</span>
+          <span class="stack-tag">NumPy</span><span class="stack-tag">Pandas</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal" data-cat="ai">
+        <div class="project-card-top">
+          <div class="project-icon">✍️</div>
+          <span class="project-badge ai">AI · Vision</span>
+        </div>
+        <div class="project-title">Handwritten Recognition System</div>
+        <div class="project-desc">Deep learning CNN model for recognizing handwritten characters and digits trained on benchmark datasets.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">PyTorch</span>
+          <span class="stack-tag">CNN</span><span class="stack-tag">Matplotlib</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal" data-cat="python">
+        <div class="project-card-top">
+          <div class="project-icon">🎮</div>
+          <span class="project-badge py">Python · Game</span>
+        </div>
+        <div class="project-title">Hangman Game</div>
+        <div class="project-desc">Classic Hangman word-guessing game in Python with word categories and difficulty levels.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">OOP</span><span class="stack-tag">CLI</span>
+        </div>
+        <a href="https://github.com/mdshahabuddin-ml/python-project" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Additional mini repos -->
+    <div class="extra-repos-header reveal">
+      <span class="section-tag">// more repositories</span>
+    </div>
+    <div class="extra-repos reveal">
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">quiz_game</span>
+        <span class="repo-desc">Python quiz game</span>
+        <div class="repo-footer"><span class="lang-dot"></span><span>Python</span></div>
+      </a>
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">todo_sqlite</span>
+        <span class="repo-desc">To-do with SQLite</span>
+        <div class="repo-footer"><span class="lang-dot"></span><span>Python</span></div>
+      </a>
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">jarvish_project</span>
+        <span class="repo-desc">Python voice assistant</span>
+        <div class="repo-footer"><span class="lang-dot"></span><span>Python</span></div>
+      </a>
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">js_english</span>
+        <span class="repo-desc">English learning JS app</span>
+        <div class="repo-footer"><span class="lang-dot js"></span><span>JavaScript</span></div>
+      </a>
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">The_Perfect_Guess</span>
+        <span class="repo-desc">Python guessing game</span>
+        <div class="repo-footer"><span class="lang-dot"></span><span>Python</span></div>
+      </a>
+      <a href="https://github.com/mdshahabuddin-ml?tab=repositories" target="_blank" class="mini-repo">
+        <span class="repo-name">js.hindi-utub</span>
+        <span class="repo-desc">Hindi JS tutorial project</span>
+        <div class="repo-footer"><span class="lang-dot js"></span><span>JavaScript</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GITHUB ═══ -->
+<section id="github">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// open source</span>
+      <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+    </div>
+    <div class="github-header-card reveal">
+      <div class="github-avatar">MS</div>
+      <div class="github-meta">
+        <div class="github-username">mdshahabuddin-ml</div>
+        <div class="github-bio">AI &amp; ML undergraduate · Python Developer · Web Developer</div>
+        <div class="github-counters">
+          <span class="github-counter"><strong>1</strong> follower</span>
+          <span class="github-counter"><strong>5</strong> following</span>
+          <span class="github-counter"><i class="fas fa-map-marker-alt"></i> Katihar, Bihar</span>
+        </div>
+      </div>
+      <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="btn btn-outline">
+        <i class="fab fa-github"></i> View Profile
+      </a>
+    </div>
+    <div class="github-stats-grid reveal">
+      <div class="github-stat-card">
+        <div class="github-stat-val" id="gh-repos">—</div>
+        <div class="github-stat-label">Repositories</div>
+      </div>
+      <div class="github-stat-card">
+        <div class="github-stat-val" id="gh-stars">—</div>
+        <div class="github-stat-label">Total Stars</div>
+      </div>
+      <div class="github-stat-card">
+        <div class="github-stat-val">Python</div>
+        <div class="github-stat-label">Top Language</div>
+      </div>
+      <div class="github-stat-card">
+        <div class="github-stat-val">AI / ML</div>
+        <div class="github-stat-label">Primary Domain</div>
+      </div>
+    </div>
+    <div class="gh-stats-img reveal">
+      <img
+        src="https://github-readme-stats.vercel.app/api?username=mdshahabuddin-ml&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0f1e&title_color=3b82f6&text_color=8896c0&icon_color=8b5cf6"
+        alt="GitHub Stats"
+        onerror="this.style.display='none'"
+      />
+    </div>
+    <div id="reposContainer" class="repos-grid reveal">
+      <div class="loading-state">
+        <i class="fas fa-circle-notch fa-spin"></i> Fetching repositories…
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// get in touch</span>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="tel:8757160137" class="contact-item">
+          <div class="contact-item-icon">📱</div>
+          <div class="contact-item-text">
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val">+91 8757160137</div>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <a href="mailto:mdshahabuddinktr1370@gmail.com" class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">mdshahabuddinktr1370@gmail.com</div>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-shahabuddin-aiml/" target="_blank" class="contact-item">
+          <div class="contact-item-icon">💼</div>
+          <div class="contact-item-text">
+            <div class="contact-item-label">LinkedIn</div>
+            <div class="contact-item-val">md-shahabuddin-aiml</div>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="contact-item">
+          <div class="contact-item-icon">🐙</div>
+          <div class="contact-item-text">
+            <div class="contact-item-label">GitHub</div>
+            <div class="contact-item-val">mdshahabuddin-ml</div>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <div class="contact-social-btns">
+          <a href="https://www.linkedin.com/in/md-shahabuddin-aiml/" target="_blank" class="btn btn-primary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/mdshahabuddin-ml" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-input" id="formName" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="formEmail" placeholder="your@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" id="formSubject" placeholder="What's it about?" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" id="formMessage" placeholder="Tell me about your project or opportunity…"></textarea>
+        </div>
+        <button class="btn btn-primary form-submit" onclick="handleFormSubmit()">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">Md Shahabuddin</div>
+      <div class="footer-copy">© 2025 · Built with ❤️ · AI &amp; ML @ Apex University</div>
+      <div class="footer-socials">
+        <a href="https://github.com/mdshahabuddin-ml"                 target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-shahabuddin-aiml/"    target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mdshahabuddinktr1370@gmail.com"               class="social-btn"><i class="fas fa-envelope"></i></a>
+        <a href="tel:8757160137"                                       class="social-btn"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <span class="toast-icon"><i class="fas fa-check-circle"></i></span>
+  <span id="toast-msg">Done!</span>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/github.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

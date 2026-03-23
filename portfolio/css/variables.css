@@ -1,0 +1,62 @@
+/* ═══════════════════════════════════════
+   variables.css — Design Tokens
+═══════════════════════════════════════ */
+:root {
+  /* Backgrounds */
+  --bg-0: #050810;
+  --bg-1: #0a0f1e;
+  --bg-2: #0f1629;
+  --bg-3: #141d38;
+
+  /* Surfaces */
+  --surface:       rgba(15, 22, 41, 0.7);
+  --surface-hover: rgba(20, 29, 56, 0.9);
+
+  /* Borders */
+  --border:      rgba(99, 132, 255, 0.15);
+  --border-glow: rgba(99, 132, 255, 0.40);
+
+  /* Text */
+  --text-primary:   #e8eeff;
+  --text-secondary: #8896c0;
+  --text-muted:     #4a5580;
+
+  /* Accent colors */
+  --accent-blue:   #3b82f6;
+  --accent-violet: #8b5cf6;
+  --accent-cyan:   #22d3ee;
+  --accent-pink:   #ec4899;
+
+  /* Gradients */
+  --grad-main: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  --grad-glow: linear-gradient(135deg, rgba(59,130,246,0.3), rgba(139,92,246,0.3));
+
+  /* Glow shadows */
+  --neon-blue:   0 0 20px rgba(59,130,246,0.6), 0 0 40px rgba(59,130,246,0.3);
+  --neon-violet: 0 0 20px rgba(139,92,246,0.6), 0 0 40px rgba(139,92,246,0.3);
+
+  /* Misc */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius:     12px;
+  --radius-lg:  20px;
+}
+
+/* ── Light theme overrides ── */
+[data-theme="light"] {
+  --bg-0: #f0f4ff;
+  --bg-1: #e8eeff;
+  --bg-2: #ffffff;
+  --bg-3: #f8faff;
+
+  --surface:       rgba(255, 255, 255, 0.80);
+  --surface-hover: rgba(248, 250, 255, 0.95);
+
+  --border:      rgba(59, 130, 246, 0.20);
+  --border-glow: rgba(59, 130, 246, 0.50);
+
+  --text-primary:   #0f1629;
+  --text-secondary: #3a4a7a;
+  --text-muted:     #7a8ab0;
+
+  --grad-glow: linear-gradient(135deg, rgba(59,130,246,0.10), rgba(139,92,246,0.10));
+}
